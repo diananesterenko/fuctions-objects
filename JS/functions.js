@@ -29,6 +29,7 @@ console.log("----------------2--------------");
  * Check if the first number is divisible by the second number.
  * @param {number} firstNum - The first operand of the division operation.
  * @param {number} secondNum - The second operand of the division operation.
+ * @returns {boolean} - True if first number is divisible by the second number.
  */
 function checkMultiplicity(firstNum, secondNum) {
   return firstNum % secondNum === 0 ? true : false;
@@ -45,6 +46,8 @@ console.log("----------------3--------------");
  * @param {number} a - The first side of triangle.
  * @param {number} b - The second side of triangle.
  * @param {number} c - The third side of triangle.
+ * @returns {boolean} - True if the triangle exists.
+
  *
  */
 function isTriangle(a, b, c) {
