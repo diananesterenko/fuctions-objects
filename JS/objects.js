@@ -3,7 +3,7 @@ const customer = {
   name: "Diana",
   surname: "Nesterenko",
   email: "dianasemak08@gmail.com",
-  password: 12345,
+  password: "12345",
   phone: "+380966915186",
   address: {
     city: "Zaporizhzhia",
