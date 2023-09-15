@@ -8,7 +8,7 @@ const customer = {
   address: {
     city: "Zaporizhzhia",
     street: "Yuvileyna",
-    house: 14,
+    house: "14",
     flat: 29,
   },
   getFullAdress() {
@@ -51,17 +51,17 @@ for (let key in cat) {
 //--------------------------3----------------
 console.log("----------------------3------------------");
 function Book(author, bookName, year, city, publishName, price) {
-  (this.author = author),
-    (this.bookName = bookName),
-    (this.year = year),
-    (this.publish = { publishName, city }),
-    (this.price = price),
-    (this.ageOfBook = function () {
-      return 2023 - this.year;
-    }),
-    (this.changePrice = function (newPrice) {
-      this.price = newPrice;
-    });
+  this.author = author;
+  this.bookName = bookName;
+  this.year = year;
+  this.publish = { publishName: publishName, city: city };
+  this.price = price;
+  this.ageOfBook = function () {
+    return 2023 - this.year;
+  };
+  this.changePrice = function (newPrice) {
+    this.price = newPrice;
+  };
 }
 
 const book1 = new Book(
