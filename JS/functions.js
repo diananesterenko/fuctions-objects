@@ -1,7 +1,7 @@
 //---------------------0---------------------
 console.log("----------------0--------------");
-let isWorking = function (age) {
-  return age >= 16 && age <= 65 ? true : false;
+const isWorking = function (age) {
+  return age >= 16 && age <= 65;
 };
 // true
 console.log(isWorking(20));
@@ -32,7 +32,7 @@ console.log("----------------2--------------");
  * @returns {boolean} - True if first number is divisible by the second number.
  */
 function checkMultiplicity(firstNum, secondNum) {
-  return firstNum % secondNum === 0 ? true : false;
+  return firstNum % secondNum === 0;
 }
 console.log(checkMultiplicity(25, 5)); // true
 console.log(checkMultiplicity(15, 3)); // true
@@ -51,9 +51,7 @@ console.log("----------------3--------------");
  *
  */
 function isTriangle(a, b, c) {
-  return a + b > c && a + c > b && b + c > a && a > 0 && b > 0 && c > 0
-    ? true
-    : false;
+  return a + b > c && a + c > b && b + c > a && a > 0 && b > 0 && c > 0;
 }
 console.log(isTriangle(1, 2, 10));
 console.log(isTriangle(10, 10, 10));
@@ -70,7 +68,7 @@ function areaTriangle(a, b, c) {
 console.log(areaTriangle(3, 4, 5));
 console.log(areaTriangle(3, 4, 0));
 
-let areaParallelepiped = function (a, b, c) {
+const areaParallelepiped = function (a, b, c) {
   return 2 * (a * b + b * c + a * c);
 };
 
